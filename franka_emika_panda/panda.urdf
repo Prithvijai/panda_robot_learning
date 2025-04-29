@@ -1,0 +1,63 @@
+<robot name="panda">
+  <!-- Base link -->
+  <link name="base_link"/>
+
+  <!-- Link 0 -->
+  <link name="link0">
+    <visual>
+      <geometry>
+        <mesh filename="assets/link0.stl"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="assets/link0.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.63"/>
+      <origin xyz="-0.041 0.0 0.05"/>
+      <inertia ixx="0.00315" ixy="0.0" ixz="0.0" iyy="0.00388" iyz="0.0" izz="0.00429"/>
+    </inertial>
+  </link>
+
+  <!-- Joint 1 -->
+  <joint name="joint1" type="revolute">
+    <parent link="base_link"/>
+    <child link="link0"/>
+    <origin xyz="0 0 0.333"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-2.8973" upper="2.8973" effort="87" velocity="2.175"/>
+  </joint>
+
+  <!-- Link 1 -->
+  <link name="link1">
+    <visual>
+      <geometry>
+        <mesh filename="assets/link1.stl"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="assets/link1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="4.97"/>
+      <origin xyz="0.0039 0.0021 -0.0476"/>
+      <inertia ixx="0.70337" ixy="-0.00014" ixz="0.0" iyy="0.70661" iyz="0.00677" izz="0.00912"/>
+    </inertial>
+  </link>
+
+  <!-- Joint 2 -->
+  <joint name="joint2" type="revolute">
+    <parent link="link0"/>
+    <child link="link1"/>
+    <origin xyz="0 0 0" rpy="0 -1.5708 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-1.7628" upper="1.7628" effort="87" velocity="2.175"/>
+  </joint>
+
+  <!-- Add more links and joints as needed -->
+
+</robot>

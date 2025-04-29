@@ -1,0 +1,13 @@
+ik_config:
+  max_iters: 50
+  tol_pos: 0.001    # 1e-3
+  tol_ori: 0.01     # 1e-2
+  damp: 0.01        # 1e-2
+  ori_weight: 0.2
+
+# You can add other configurations here in the future
+robot_config:
+  ee_body: "hand"
+  base_body: "link0"
+  grip_joint: "finger_joint1"
+  num_dof: 7  # number of arm DOFs (no gripper)
