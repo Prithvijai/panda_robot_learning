@@ -8,9 +8,9 @@
        friction="1 .03 .003" rgba="0 1 0 1" contype="2" conaffinity="1" solref="0.01 1"/>
     </body>
     <body mocap="true" name="mocap_target" pos="0.5 0 0.5">
-  <geom type="sphere" size="0.05" rgba="1 0 0 0.5" contype="1" conaffinity="1"/>
+  <!-- <geom type="sphere" size="0.05" rgba="1 0 0 0.5" contype="1" conaffinity="1"/> -->
   
-  <site name="target_site" pos="0 0 0" size="0.01" rgba="1 1 1 1"/> 
+  <!-- <site name="target_site" pos="0 0 0" size="0.01" rgba="1 1 1 1"/>  -->
 </body>
 
     <body name="demo_cam_body" pos="1.2 0.0 0.8">
