@@ -1,5 +1,5 @@
 import mujoco
-import mujoco_viewer
+# import mujoco_viewer
 import mujoco.viewer
 import numpy as np
 import os
@@ -10,7 +10,7 @@ model = mujoco.MjModel.from_xml_path(model_path)
 data = mujoco.MjData(model)
 
 # Create the viewer for visualization
-viewer = mujoco_viewer.MujocoViewer(model, data)
+viewer = mujoco.viewer.MujocoViewer(model, data)
 # viewer = mujoco_viewer.launch_passive(model, data)
 
 # Target joint positions for the Panda arm (7 joints)

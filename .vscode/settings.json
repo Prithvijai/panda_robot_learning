@@ -1,4 +1,15 @@
 {
     "ros.distro": "humble",
-    "cmake.sourceDirectory": "/home/saitama/Documents/panda_robot_learning/panda_ros/src/franka_panda_description"
+    "cmake.sourceDirectory": "/home/saitama/Documents/panda_robot_learning/panda_ros/src/franka_panda_description",
+    "ROS2.distro": "humble",
+    "python.autoComplete.extraPaths": [
+        "/home/saitama/joystick_ws/install/overlay_event_rgb/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/saitama/joystick_ws/install/overlay_event_rgb/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
 }

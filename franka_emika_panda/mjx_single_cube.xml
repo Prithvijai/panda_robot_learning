@@ -7,11 +7,36 @@
       <geom type="box" name="box" size="0.02 0.02 0.03" condim="3"
        friction="1 .03 .003" rgba="0 1 0 1" contype="2" conaffinity="1" solref="0.01 1"/>
     </body>
-    <!-- <body mocap="true" name="mocap_target">
-      <geom type="box" size="0.02 0.02 0.03" rgba="1 0 0 0.2" contype="0" conaffinity="0"/>
-    </body> -->
+    <body mocap="true" name="mocap_target" pos="0.5 0 0.5">
+  <geom type="sphere" size="0.05" rgba="1 0 0 0.5" contype="1" conaffinity="1"/>
+  
+  <site name="target_site" pos="0 0 0" size="0.01" rgba="1 1 1 1"/> 
+</body>
 
+    <body name="demo_cam_body" pos="1.2 0.0 0.8">
+      <camera name="demo_cam"
+              mode="fixed"
+              euler="0 45 77"     
+              fovy="45"/>
+      <site name="cam_marker"
+            pos="0 0 0" 
+            size="0.02"
+            type="sphere"
+            rgba="1 0 0 1"/>
+    </body>
     
+
+    <body name="top_cam" pos="0.5 0.0 0.8">
+      <camera name="top_cam"
+              mode="fixed"
+              euler="0 0 0"    
+              fovy="45"/>
+      <site name="cam_marker2"
+            pos="0 0 0" 
+            size="0.02"
+            type="sphere"
+            rgba="1 0 0 1"/>
+    </body>
 
   </worldbody>
 
