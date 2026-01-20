@@ -8,9 +8,9 @@ import mujoco
 import mediapy as media
 import mujoco.viewer
 
-from src.helper_functions.quat_helper import quat_to_rpy, rpy_to_quat, quaternion_error
-from src.helper_functions.config_loader import load_robot_config
-from src.helper_functions.ik_solver import InverseKinematicsSolver
+from src.quat_helper import quat_to_rpy, rpy_to_quat, quaternion_error
+from src.config_loader import load_robot_config
+from src.ik_solver import InverseKinematicsSolver
 
 
 cfg = load_robot_config("./config/config.yaml")
